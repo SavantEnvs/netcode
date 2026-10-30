@@ -1,0 +1,8 @@
+project: savantenvs/netcode
+target: fuzz_read_packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_read_packet
+    libfuzzer: true
+    timeout: 5

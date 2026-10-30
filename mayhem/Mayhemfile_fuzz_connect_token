@@ -1,0 +1,8 @@
+project: savantenvs/netcode
+target: fuzz_connect_token
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/fuzz_connect_token
+    libfuzzer: true
+    timeout: 5
